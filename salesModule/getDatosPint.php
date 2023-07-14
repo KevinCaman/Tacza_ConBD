@@ -53,16 +53,16 @@ if(verificarBoton1($boton1))
 
         $validar=$objRegistro -> regisPint($registros1);
         if($validar==1){
-            $objMensaje -> windowMensajeSistemaShow("Solicitud aceptada: Datos resgistrados","<a href='../index.php'>ir al inicio</a>");  
+            $objMensaje -> windowMensajeSistemaShow("Solicitud aceptada: Datos resgistrados","<a href='../indexEmitirProforma.php'>ir al inicio</a>");  
         }else{
-            $objMensaje -> windowMensajeSistemaShow("Error: Algo salió mal","<a href='../index.php'>ir al inicio</a>");
+            $objMensaje -> windowMensajeSistemaShow("Error: Algo salió mal","<a href='../indexEmitirProforma.php'>ir al inicio</a>");
         }
                    
     } else {
 
         include_once('../shared/windowMensajeSistema.php');
         $objMensaje = new windowMensajeSistema();
-        $objMensaje -> windowMensajeSistemaShow("Error: Los datos ingresados no son validos","<a href='../index.php'>ir al inicio</a>");
+        $objMensaje -> windowMensajeSistemaShow("Error: Los datos ingresados no son validos","<a href='../indexEmitirProforma.php'>ir al inicio</a>");
     }
 }
 
@@ -70,7 +70,7 @@ if(verificarBoton2($boton2))
 {   
         include_once('../shared/windowMensajeSistema.php');
         $objMensaje = new windowMensajeSistema();
-        $objMensaje -> windowMensajeSistemaShow("Solicitud cancelada","<a href='../index.php'>ir al inicio</a>");
+        $objMensaje -> windowMensajeSistemaShow("Solicitud cancelada","<a href='../indexEmitirProforma.php'>ir al inicio</a>");
       
 }
 ?>

@@ -59,13 +59,13 @@ if(verificarBoton($boton) && validarCampos($DNI, $Marca, $Modelo, $Placa, $Fecha
 
         include_once('../shared/windowMensajeSistema.php');
         $objMensaje = new windowMensajeSistema();
-        $objMensaje -> windowMensajeSistemaShow("Error: No se a seleccionado ninguna opción de servicio","<a href='../index.php'>ir al inicio</a>");
+        $objMensaje -> windowMensajeSistemaShow("Error: No se a seleccionado ninguna opción de servicio","<a href='../indexEmitirProforma.php'>ir al inicio</a>");
     }
 }
 else
 {
     include_once('../shared/windowMensajeSistema.php');
     $objMensaje = new windowMensajeSistema();
-    $objMensaje -> windowMensajeSistemaShow("Error: Los datos ingresados no son válidos","<a href='../index.php'>ir al inicio</a>");
+    $objMensaje -> windowMensajeSistemaShow("Error: Los datos ingresados no son válidos","<a href='../indexEmitirProforma.php'>ir al inicio</a>");
 }
 ?>
